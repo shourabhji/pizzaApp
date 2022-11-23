@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background: rgb(234, 169, 83);
+  overflow-x: hidden;
+ 
+}
+
+body::-webkit-scrollbar{
+ width: 5px;
+
+}
+body::-webkit-scrollbar-track{
+  color: gray;
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: black;
+
+}
+
+.imagefilter{
+  filter:brightness(155%) contrast(125%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cart-logo::after{
+  content: attr(value);
+  font-size: 12px;
+  color: black;
+  background:  rgb(254, 197, 9);
+  border-radius: 50%;
+  padding: 0 5px;
+  position: relative;
+  left: -8px;
+  top: -10px;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+.full-w{
+  width: 100%;
+}
+.landingPage{
+    height:95vh ;
+    z-index: -1;
+         width: 100vw;
+         background-image: url('./img/11715.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: flex;
+         margin-bottom: 6vh;
+        
+}
+.homeText{
+  margin-top: 25vh;
+  text-align: center;
+
+}
+.homeText > h1{
+   
+  font-size: 4rem;
+}
+
+.spinnercenter{
+ text-align: center;
+    margin: 20vh auto;
+}
+ 
+.cart-iteam-card{
+  margin: auto;
+  width: 50%;
+}
+
+
+.ellipses{
+  width: 100%;
+  max-height: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:pre-wrap;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical ;
+  
+}
+.cursorPtr{
+  cursor: pointer;
+}
+.imageseffrct{
+  -webkit-transform:  scale(1);
+    transform: scale(1);
+
+}
+.imageseffrct:hover{
+
+  -webkit-transform: scale(1.05);
+    transform:  scale(1.05);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    box-shadow: 3px 3px 8px 2px black;
+
+}
+
+
+
+@media (max-width: 990px)
+{
+  .col-md-4 {
+    /* flex: 1 0; */
+  width: 45%;
+}
+.cart-iteam-card{
+  margin: auto;
+  width: 50%;
+}
+}
+@media (max-width: 770px)
+{
+  .col-md-4 {
+    width: 100%;
+}
+.cart-iteam-card{
+  margin: auto;
+  width: 100%;
+}
+}
+@media screen and (min-width : 770px) {
+  .half-w{
+  width: 40vw;
+  margin: auto;
+}
+}
